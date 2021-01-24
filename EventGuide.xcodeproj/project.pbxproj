@@ -62,15 +62,31 @@
 		7620306B25BD4ACF00838524 /* EventGuide */ = {
 			isa = PBXGroup;
 			children = (
-				7620306C25BD4ACF00838524 /* AppDelegate.swift */,
-				7620306E25BD4AD000838524 /* SceneDelegate.swift */,
-				7620307025BD4AD000838524 /* ViewController.swift */,
+				768B7CDD25BE045E00F5C04E /* Application Delegate */,
+				768B7CE025BE048400F5C04E /* View Controllers */,
 				7620307225BD4AD000838524 /* Main.storyboard */,
 				7620307525BD4AD200838524 /* Assets.xcassets */,
 				7620307725BD4AD200838524 /* LaunchScreen.storyboard */,
 				7620307A25BD4AD200838524 /* Info.plist */,
 			);
 			path = EventGuide;
+			sourceTree = "<group>";
+		};
+		768B7CDD25BE045E00F5C04E /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				7620306C25BD4ACF00838524 /* AppDelegate.swift */,
+				7620306E25BD4AD000838524 /* SceneDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		768B7CE025BE048400F5C04E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7620307025BD4AD000838524 /* ViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
