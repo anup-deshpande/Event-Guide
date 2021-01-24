@@ -128,6 +128,9 @@ class EventDetailViewController: UIViewController {
             }
 
         }
+        
+        let feedbackGenerator = UIImpactFeedbackGenerator(style: .light)
+        feedbackGenerator.impactOccurred()
     }
     
     @IBAction func bookTicketsTapped(_ sender: UIButton) {
