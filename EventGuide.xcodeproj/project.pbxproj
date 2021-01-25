@@ -16,14 +16,32 @@
 		7620308325BD4D3900838524 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7620308225BD4D3900838524 /* Realm */; };
 		7620308525BD4D3900838524 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7620308425BD4D3900838524 /* RealmSwift */; };
 		7620308925BD4E4200838524 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7620308825BD4E4200838524 /* SDWebImage */; };
+		766414B225BF351B005171D4 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766414B125BF351B005171D4 /* MockNetworkService.swift */; };
+		766414BC25BF361E005171D4 /* EventListSuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 766414BB25BF361E005171D4 /* EventListSuccessResponse.json */; };
+		766414C625BF506F005171D4 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766414C525BF506F005171D4 /* NetworkServiceTests.swift */; };
+		766414CF25BF5103005171D4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF625BE06F600F5C04E /* Router.swift */; };
+		766414D525BF573E005171D4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */; };
+		766414E025BF5C6D005171D4 /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766414DF25BF5C6D005171D4 /* RealmModels.swift */; };
+		766414E325BF5C7A005171D4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE325BE052300F5C04E /* Models.swift */; };
 		768B7CE425BE052300F5C04E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE325BE052300F5C04E /* Models.swift */; };
 		768B7CE925BE05D500F5C04E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE825BE05D500F5C04E /* Constants.swift */; };
 		768B7CED25BE061000F5C04E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CEC25BE061000F5C04E /* EventTableViewCell.swift */; };
 		768B7CF225BE067500F5C04E /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF125BE067500F5C04E /* EventDetailViewController.swift */; };
 		768B7CF725BE06F600F5C04E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF625BE06F600F5C04E /* Router.swift */; };
-		768B7CFA25BE070200F5C04E /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF925BE070200F5C04E /* ServiceLayer.swift */; };
+		768B7CFA25BE070200F5C04E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF925BE070200F5C04E /* NetworkService.swift */; };
 		768B7CFD25BE074E00F5C04E /* SeatGeek-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 768B7CFC25BE074E00F5C04E /* SeatGeek-Info.plist */; };
+		768B7D2225BF306200F5C04E /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		768B7D0825BE0AE800F5C04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7620306125BD4ACF00838524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7620306825BD4ACF00838524;
+			remoteInfo = EventGuide;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7620306925BD4ACF00838524 /* EventGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,13 +52,20 @@
 		7620307525BD4AD200838524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7620307825BD4AD200838524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7620307A25BD4AD200838524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		766414B125BF351B005171D4 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		766414BB25BF361E005171D4 /* EventListSuccessResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventListSuccessResponse.json; sourceTree = "<group>"; };
+		766414C525BF506F005171D4 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		766414DF25BF5C6D005171D4 /* RealmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
 		768B7CE325BE052300F5C04E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		768B7CE825BE05D500F5C04E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		768B7CEC25BE061000F5C04E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		768B7CF125BE067500F5C04E /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		768B7CF625BE06F600F5C04E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		768B7CF925BE070200F5C04E /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		768B7CF925BE070200F5C04E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		768B7CFC25BE074E00F5C04E /* SeatGeek-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SeatGeek-Info.plist"; sourceTree = "<group>"; };
+		768B7D0325BE0AE800F5C04E /* EventGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B7D0725BE0AE800F5C04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		768B7D0025BE0AE800F5C04E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				7620306B25BD4ACF00838524 /* EventGuide */,
+				768B7D0425BE0AE800F5C04E /* EventGuideTests */,
 				7620306A25BD4ACF00838524 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				7620306925BD4ACF00838524 /* EventGuide.app */,
+				768B7D0325BE0AE800F5C04E /* EventGuideTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +123,22 @@
 				768B7CFC25BE074E00F5C04E /* SeatGeek-Info.plist */,
 			);
 			path = EventGuide;
+			sourceTree = "<group>";
+		};
+		766414B525BF3522005171D4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				766414B125BF351B005171D4 /* MockNetworkService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		766414BA25BF35B5005171D4 /* JSON Responses */ = {
+			isa = PBXGroup;
+			children = (
+				766414BB25BF361E005171D4 /* EventListSuccessResponse.json */,
+			);
+			path = "JSON Responses";
 			sourceTree = "<group>";
 		};
 		768B7CDD25BE045E00F5C04E /* Application Delegate */ = {
@@ -113,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				768B7CE325BE052300F5C04E /* Models.swift */,
+				766414DF25BF5C6D005171D4 /* RealmModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,10 +187,22 @@
 		768B7CF525BE06E500F5C04E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */,
 				768B7CF625BE06F600F5C04E /* Router.swift */,
-				768B7CF925BE070200F5C04E /* ServiceLayer.swift */,
+				768B7CF925BE070200F5C04E /* NetworkService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		768B7D0425BE0AE800F5C04E /* EventGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				766414BA25BF35B5005171D4 /* JSON Responses */,
+				766414B525BF3522005171D4 /* Mocks */,
+				766414C525BF506F005171D4 /* NetworkServiceTests.swift */,
+				768B7D0725BE0AE800F5C04E /* Info.plist */,
+			);
+			path = EventGuideTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +230,24 @@
 			productReference = 7620306925BD4ACF00838524 /* EventGuide.app */;
 			productType = "com.apple.product-type.application";
 		};
+		768B7D0225BE0AE800F5C04E /* EventGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768B7D0A25BE0AE800F5C04E /* Build configuration list for PBXNativeTarget "EventGuideTests" */;
+			buildPhases = (
+				768B7CFF25BE0AE800F5C04E /* Sources */,
+				768B7D0025BE0AE800F5C04E /* Frameworks */,
+				768B7D0125BE0AE800F5C04E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768B7D0925BE0AE800F5C04E /* PBXTargetDependency */,
+			);
+			name = EventGuideTests;
+			productName = EventGuideTests;
+			productReference = 768B7D0325BE0AE800F5C04E /* EventGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,6 +259,10 @@
 				TargetAttributes = {
 					7620306825BD4ACF00838524 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					768B7D0225BE0AE800F5C04E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7620306825BD4ACF00838524;
 					};
 				};
 			};
@@ -199,6 +284,7 @@
 			projectRoot = "";
 			targets = (
 				7620306825BD4ACF00838524 /* EventGuide */,
+				768B7D0225BE0AE800F5C04E /* EventGuideTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,6 +301,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		768B7D0125BE0AE800F5C04E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766414BC25BF361E005171D4 /* EventListSuccessResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -226,15 +320,37 @@
 				768B7CED25BE061000F5C04E /* EventTableViewCell.swift in Sources */,
 				768B7CE925BE05D500F5C04E /* Constants.swift in Sources */,
 				7620307125BD4AD000838524 /* EventListViewController.swift in Sources */,
+				766414E025BF5C6D005171D4 /* RealmModels.swift in Sources */,
 				7620306D25BD4ACF00838524 /* AppDelegate.swift in Sources */,
 				7620306F25BD4AD000838524 /* SceneDelegate.swift in Sources */,
 				768B7CF225BE067500F5C04E /* EventDetailViewController.swift in Sources */,
-				768B7CFA25BE070200F5C04E /* ServiceLayer.swift in Sources */,
+				768B7CFA25BE070200F5C04E /* NetworkService.swift in Sources */,
+				768B7D2225BF306200F5C04E /* NetworkServiceProtocol.swift in Sources */,
 				768B7CE425BE052300F5C04E /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		768B7CFF25BE0AE800F5C04E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766414C625BF506F005171D4 /* NetworkServiceTests.swift in Sources */,
+				766414CF25BF5103005171D4 /* Router.swift in Sources */,
+				766414B225BF351B005171D4 /* MockNetworkService.swift in Sources */,
+				766414D525BF573E005171D4 /* NetworkServiceProtocol.swift in Sources */,
+				766414E325BF5C7A005171D4 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		768B7D0925BE0AE800F5C04E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7620306825BD4ACF00838524 /* EventGuide */;
+			targetProxy = 768B7D0825BE0AE800F5C04E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7620307225BD4AD000838524 /* Main.storyboard */ = {
@@ -410,6 +526,46 @@
 			};
 			name = Release;
 		};
+		768B7D0B25BE0AE800F5C04E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59XJFY72WQ;
+				INFOPLIST_FILE = EventGuideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deshpande.EventGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventGuide.app/EventGuide";
+			};
+			name = Debug;
+		};
+		768B7D0C25BE0AE800F5C04E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59XJFY72WQ;
+				INFOPLIST_FILE = EventGuideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deshpande.EventGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventGuide.app/EventGuide";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,6 +583,15 @@
 			buildConfigurations = (
 				7620307E25BD4AD200838524 /* Debug */,
 				7620307F25BD4AD200838524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768B7D0A25BE0AE800F5C04E /* Build configuration list for PBXNativeTarget "EventGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B7D0B25BE0AE800F5C04E /* Debug */,
+				768B7D0C25BE0AE800F5C04E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,11 +6,6 @@
 //
 
 import Foundation
-import RealmSwift
-
-class RealmEvent: Object{
-    @objc dynamic var id: Int = 0
-}
 
 struct EventList: Codable{
     let events: [Event]
