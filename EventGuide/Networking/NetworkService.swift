@@ -7,9 +7,8 @@
 
 import Foundation
 
-class ServiceLayer{
-    
-    class func request<T: Codable>(router: Router, completion: @escaping (Result<T, Error>) -> ()){
+class NetworkService: NetworkServiceProtocol{
+    static func request<T: Codable>(router: Router, completion: @escaping (Result<T, Error>) -> ()){
             
         // Construct URL from the components formed in the router
         var components = URLComponents()
