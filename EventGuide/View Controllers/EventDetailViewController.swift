@@ -112,7 +112,7 @@ class EventDetailViewController: UIViewController {
         guard let isFav = isFavorite else { return }
         guard let event = event else { return }
         
-        if isFav == true{
+        if isFav{
             let eventToDelete = realm.objects(RealmEvent.self).filter { $0.id == event.id }
             try! realm.write{
                 realm.delete(eventToDelete)

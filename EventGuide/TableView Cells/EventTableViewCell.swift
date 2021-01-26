@@ -37,22 +37,19 @@ class EventTableViewCell: UITableViewCell {
     
     func setCellValues(){
         guard let event = event else { return }
+        guard let isFavorite = isFavorite else { return }
         
         title.text = event.title
         
         // Check if event date is fixed
-        if event.dateTbd == false{
-            
-            let dateFormatter = DateFormatter()
+        if !event.dateTbd{
             
             // Date is decided, Check if time is fixed
-            if event.timeTbd == false{
-                dateFormatter.dateFormat = "E, MMM d, YYYY h:mm a"
-                let eventDate = dateFormatter.string(from: event.datetimeLocal)
+            if !event.timeTbd{
+                let eventDate = DateFormatter.dayMonthYearTimeFormat.string(from: event.datetimeLocal)
                 dateTime.text = "\(eventDate)"
             }else{
-                dateFormatter.dateFormat = "E, MMM d, YYYY"
-                let eventDate = dateFormatter.string(from: event.datetimeLocal)
+                let eventDate = DateFormatter.dayMonthYearFormat.string(from: event.datetimeLocal)
                 dateTime.text = "\(eventDate) Time TBD"
             }
         }else{
@@ -65,12 +62,8 @@ class EventTableViewCell: UITableViewCell {
         }else{
             thumbnail.image = UIImage(systemName: "photo")
         }
-        
-        if isFavorite == true{
-            favoriteLabel.isHidden = false
-        }else{
-            favoriteLabel.isHidden = true
-        }
+
+        favoriteLabel.isHidden = !isFavorite
     }
     
     func setCellStyles(){

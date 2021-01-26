@@ -23,6 +23,7 @@
 		766414D525BF573E005171D4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */; };
 		766414E025BF5C6D005171D4 /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766414DF25BF5C6D005171D4 /* RealmModels.swift */; };
 		766414E325BF5C7A005171D4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE325BE052300F5C04E /* Models.swift */; };
+		766414ED25BFE178005171D4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766414EC25BFE178005171D4 /* DateFormatter+Extension.swift */; };
 		768B7CE425BE052300F5C04E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE325BE052300F5C04E /* Models.swift */; };
 		768B7CE925BE05D500F5C04E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE825BE05D500F5C04E /* Constants.swift */; };
 		768B7CED25BE061000F5C04E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CEC25BE061000F5C04E /* EventTableViewCell.swift */; };
@@ -56,6 +57,7 @@
 		766414BB25BF361E005171D4 /* EventListSuccessResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventListSuccessResponse.json; sourceTree = "<group>"; };
 		766414C525BF506F005171D4 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		766414DF25BF5C6D005171D4 /* RealmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
+		766414EC25BFE178005171D4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		768B7CE325BE052300F5C04E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		768B7CE825BE05D500F5C04E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		768B7CEC25BE061000F5C04E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				768B7CEF25BE061500F5C04E /* TableView Cells */,
 				768B7CF525BE06E500F5C04E /* Networking */,
 				768B7CE225BE050E00F5C04E /* Models */,
+				766414EB25BFE153005171D4 /* Extensions */,
 				768B7CE725BE05BB00F5C04E /* Utils */,
 				7620307225BD4AD000838524 /* Main.storyboard */,
 				7620307525BD4AD200838524 /* Assets.xcassets */,
@@ -139,6 +142,14 @@
 				766414BB25BF361E005171D4 /* EventListSuccessResponse.json */,
 			);
 			path = "JSON Responses";
+			sourceTree = "<group>";
+		};
+		766414EB25BFE153005171D4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				766414EC25BFE178005171D4 /* DateFormatter+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		768B7CDD25BE045E00F5C04E /* Application Delegate */ = {
@@ -318,6 +329,7 @@
 			files = (
 				768B7CF725BE06F600F5C04E /* Endpoint.swift in Sources */,
 				768B7CED25BE061000F5C04E /* EventTableViewCell.swift in Sources */,
+				766414ED25BFE178005171D4 /* DateFormatter+Extension.swift in Sources */,
 				768B7CE925BE05D500F5C04E /* Constants.swift in Sources */,
 				7620307125BD4AD000838524 /* EventListViewController.swift in Sources */,
 				766414E025BF5C6D005171D4 /* RealmModels.swift in Sources */,

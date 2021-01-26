@@ -37,11 +37,7 @@ class NetworkService: NetworkServiceProtocol{
             // 3. Convert from ISO-8601 to Date instance
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-            
-            decoder.dateDecodingStrategy = .formatted(dateFormatter)
+            decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
             
             do{
                 let repsponseObject = try decoder.decode(T.self, from: data)
