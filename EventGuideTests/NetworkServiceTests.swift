@@ -9,7 +9,7 @@ import XCTest
 
 class NetworkServiceTests: XCTestCase {
 
-    func testEventListSuccessResponse(){
+    func testEventListExpectedCount(){
         MockNetworkService.request(router: .getEvents) { (result: Result< EventList, Error>) in
             switch result{
             case .success(let eventList):
@@ -19,7 +19,5 @@ class NetworkServiceTests: XCTestCase {
             }
         }
     }
-
-    
 
 }
