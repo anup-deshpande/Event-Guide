@@ -8,19 +8,19 @@
 import Foundation
 
 class NetworkService: NetworkServiceProtocol{
-    static func request<T: Codable>(router: Router, completion: @escaping (Result<T, Error>) -> ()){
+    static func request<T: Codable>(endpoint: Endpoint, completion: @escaping (Result<T, Error>) -> ()){
             
         // Construct URL from the components formed in the router
         var components = URLComponents()
-        components.scheme = router.scheme
-        components.host = router.host
-        components.path = router.path
-        components.queryItems = router.parameters
+        components.scheme = endpoint.scheme
+        components.host = endpoint.host
+        components.path = endpoint.path
+        components.queryItems = endpoint.parameters
         
         guard let url = components.url else { return }
         
         var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = router.method
+        urlRequest.httpMethod = endpoint.method
         
         let session = URLSession(configuration: .default)
         let dataTask = session.dataTask(with: urlRequest) { (data, response, error) in
@@ -50,7 +50,7 @@ class NetworkService: NetworkServiceProtocol{
                     completion(.success(repsponseObject))
                 }
                 
-            }catch(let error){
+            }catch{
                 print("Error in parsing data fetched from request: \(error.localizedDescription)")
                 completion(.failure(error))
             }

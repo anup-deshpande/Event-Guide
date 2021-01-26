@@ -8,5 +8,5 @@
 import Foundation
 
 protocol NetworkServiceProtocol {
-    static func request<T: Codable>(router: Router, completion: @escaping (Result<T, Error>) -> ())
+    static func request<T: Codable>(endpoint: Endpoint, completion: @escaping (Result<T, Error>) -> ())
 }

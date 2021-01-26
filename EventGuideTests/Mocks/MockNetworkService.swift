@@ -9,7 +9,7 @@ import Foundation
 @testable import EventGuide
 
 class MockNetworkService: NetworkServiceProtocol{
-    static func request<T: Codable>(router: Router, completion: @escaping (Result<T, Error>) -> ()){
+    static func request<T: Codable>(endpoint: Endpoint, completion: @escaping (Result<T, Error>) -> ()){
 
         // Instead of calling the network endpoint get the response from static file
         guard let url = Bundle(for: MockNetworkService.self).url(forResource: "EventListSuccessResponse", withExtension: "json") else { return  }

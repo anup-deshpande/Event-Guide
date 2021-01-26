@@ -45,7 +45,7 @@ class EventListViewController: UIViewController {
         favoriteEventIDs = Array(realm.objects(RealmEvent.self))
         
         // Refresh events from the API
-        NetworkService.request(router: .getEvents) { [weak self] (result: Result< EventList, Error>) in
+        NetworkService.request(endpoint: .getEvents) { [weak self] (result: Result< EventList, Error>) in
             switch result{
             case .success(let eventList):
                 self?.events = eventList.events
@@ -62,7 +62,7 @@ class EventListViewController: UIViewController {
 extension EventListViewController: UISearchBarDelegate{
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        NetworkService.request(router: .searchEvents(keyword: searchText)) { [weak self] (result: Result<EventList,Error>) in
+        NetworkService.request(endpoint: .searchEvents(keyword: searchText)) { [weak self] (result: Result<EventList,Error>) in
             switch result{
             case .success(let eventList):
                 self?.events = eventList.events

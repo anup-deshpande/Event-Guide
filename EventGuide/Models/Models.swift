@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct APIPreferences: Decodable{
+    let clientID: String
+}
+
 struct EventList: Codable{
     let events: [Event]
     let meta: Meta

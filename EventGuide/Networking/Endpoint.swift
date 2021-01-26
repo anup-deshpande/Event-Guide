@@ -7,29 +7,31 @@
 
 import Foundation
 
-enum Router{
+enum Endpoint{
     case getEvents
     case searchEvents(keyword: String)
     
     private var clientId: String{
         get{
-            // Check if the clientId plist file exist in the bundle
+            // Check if the SeatGeek-Info plist file exist in the bundle
             guard let filePath = Bundle.main.path(forResource: "SeatGeek-Info", ofType: "plist") else{
                 fatalError("Couldn't find file 'SeatGeek-Info.plist'.")
             }
             
-            // Retrive clientId from the file
-            let plist = NSDictionary(contentsOfFile: filePath)
-            guard let clientId = plist?.object(forKey: "CLIENT_ID") as? String else{
-                fatalError("Couldn't find key 'CLIENT_ID' in 'SeatGeek-Info.plist'")
+            // Retrive APIPreferences from the file
+            guard let data = FileManager.default.contents(atPath: filePath) else { fatalError("Couldn't read data from plist file") }
+            
+            let decoder = PropertyListDecoder()
+            guard let preferences = try? decoder.decode(APIPreferences.self, from: data) else {
+                fatalError("Couldn't decode APIPreference from plist file")
             }
             
-            return clientId
+            return preferences.clientID
         }
     }
 }
 
-extension Router{
+extension Endpoint{
     var scheme: String{
         return "https"
     }
