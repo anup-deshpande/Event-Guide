@@ -14,33 +14,26 @@ struct MainView: View {
     
     var body: some View {
         List(events, id: \.id){ event in
-            VStack(alignment: .leading){
+            HStack{
                 
                 KFImage.url(URL(string: event.performers.first?.image ?? "")!)
                     .resizable()
                     .placeholder{
-                            Image(systemName: "photo.on.rectangle")}
+                        Image(systemName: "photo.on.rectangle")
+                    }
+                    .fade(duration: 1)
+                    .frame(width: 60, height: 60)
                 
-                Text(event.title)
-                    .font(.body)
+                VStack(alignment: .leading){
+                    Text(event.title)
+                        .font(.body)
+                    
+                    Text(event.dateTime)
+                        .font(.callout)
+                        .foregroundColor(.secondary)
+                }
                 
                 
-                /*
-                 // Check if event date is fixed
-                 if !event.dateTbd{
-                     
-                     // Date is decided, Check if time is fixed
-                     if !event.timeTbd{
-                         let eventDate = DateFormatter.dayMonthYearTimeFormat.string(from: event.datetimeLocal)
-                         dateTime.text = "\(eventDate)"
-                     }else{
-                         let eventDate = DateFormatter.dayMonthYearFormat.string(from: event.datetimeLocal)
-                         dateTime.text = "\(eventDate) Time TBD"
-                     }
-                 }else{
-                     dateTime.text = "Date and Time TBD"
-                 }
-                 */
             }
         }
         .onAppear(perform: fetchEvents)
