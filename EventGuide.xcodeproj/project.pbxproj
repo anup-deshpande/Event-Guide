@@ -31,7 +31,7 @@
 		768B7CFA25BE070200F5C04E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF925BE070200F5C04E /* NetworkService.swift */; };
 		768B7CFD25BE074E00F5C04E /* SeatGeek-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 768B7CFC25BE074E00F5C04E /* SeatGeek-Info.plist */; };
 		768B7D2225BF306200F5C04E /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */; };
-		7698B66F25CB7E6500758071 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698B66E25CB7E6500758071 /* MainView.swift */; };
+		7698B66F25CB7E6500758071 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698B66E25CB7E6500758071 /* EventListView.swift */; };
 		7698B6B825CBA4B600758071 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7698B6B725CBA4B600758071 /* Kingfisher */; };
 		7698B6BF25CBA53D00758071 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7698B6BE25CBA53D00758071 /* SDWebImage */; };
 /* End PBXBuildFile section */
@@ -70,7 +70,7 @@
 		768B7D0325BE0AE800F5C04E /* EventGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		768B7D0725BE0AE800F5C04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
-		7698B66E25CB7E6500758071 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7698B66E25CB7E6500758071 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 				7620307725BD4AD200838524 /* LaunchScreen.storyboard */,
 				7620307A25BD4AD200838524 /* Info.plist */,
 				768B7CFC25BE074E00F5C04E /* SeatGeek-Info.plist */,
-				7698B66E25CB7E6500758071 /* MainView.swift */,
+				7698B66E25CB7E6500758071 /* EventListView.swift */,
 			);
 			path = EventGuide;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768B7CF725BE06F600F5C04E /* Endpoint.swift in Sources */,
-				7698B66F25CB7E6500758071 /* MainView.swift in Sources */,
+				7698B66F25CB7E6500758071 /* EventListView.swift in Sources */,
 				768B7CED25BE061000F5C04E /* EventTableViewCell.swift in Sources */,
 				766414ED25BFE178005171D4 /* DateFormatter+Extension.swift in Sources */,
 				768B7CE925BE05D500F5C04E /* Constants.swift in Sources */,
