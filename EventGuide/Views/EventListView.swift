@@ -15,7 +15,8 @@ struct EventListView: View {
     var body: some View {
         NavigationView{
             List(events, id: \.id){ event in
-                HStack{
+                NavigationLink(destination: EventDetailsView()){
+                    HStack{
                     
                     KFImage.url(URL(string: event.performers.first?.image ?? "")!)
                         .resizable()
@@ -41,9 +42,10 @@ struct EventListView: View {
                     
                     
                 }
+                }
             }
             .onAppear(perform: fetchEvents)
-            .navigationBarTitle("Event Guide", displayMode: .inline)
+            .navigationBarTitle(Text("Event Guide"), displayMode: .inline)
         }
     }
     

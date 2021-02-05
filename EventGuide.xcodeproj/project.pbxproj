@@ -34,6 +34,7 @@
 		7698B66F25CB7E6500758071 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698B66E25CB7E6500758071 /* EventListView.swift */; };
 		7698B6B825CBA4B600758071 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7698B6B725CBA4B600758071 /* Kingfisher */; };
 		7698B6BF25CBA53D00758071 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7698B6BE25CBA53D00758071 /* SDWebImage */; };
+		76E9C39F25CC9AA40037BC62 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9C39E25CC9AA40037BC62 /* EventDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		768B7D0725BE0AE800F5C04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		7698B66E25CB7E6500758071 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		76E9C39E25CC9AA40037BC62 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				768B7CDD25BE045E00F5C04E /* Application Delegate */,
+				76E9C3A225CC9AAB0037BC62 /* Views */,
 				768B7CE025BE048400F5C04E /* View Controllers */,
 				768B7CEF25BE061500F5C04E /* TableView Cells */,
 				768B7CF525BE06E500F5C04E /* Networking */,
@@ -128,7 +131,6 @@
 				7620307725BD4AD200838524 /* LaunchScreen.storyboard */,
 				7620307A25BD4AD200838524 /* Info.plist */,
 				768B7CFC25BE074E00F5C04E /* SeatGeek-Info.plist */,
-				7698B66E25CB7E6500758071 /* EventListView.swift */,
 			);
 			path = EventGuide;
 			sourceTree = "<group>";
@@ -219,6 +221,15 @@
 				768B7D0725BE0AE800F5C04E /* Info.plist */,
 			);
 			path = EventGuideTests;
+			sourceTree = "<group>";
+		};
+		76E9C3A225CC9AAB0037BC62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7698B66E25CB7E6500758071 /* EventListView.swift */,
+				76E9C39E25CC9AA40037BC62 /* EventDetailsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +351,7 @@
 				766414ED25BFE178005171D4 /* DateFormatter+Extension.swift in Sources */,
 				768B7CE925BE05D500F5C04E /* Constants.swift in Sources */,
 				7620307125BD4AD000838524 /* EventListViewController.swift in Sources */,
+				76E9C39F25CC9AA40037BC62 /* EventDetailsView.swift in Sources */,
 				766414E025BF5C6D005171D4 /* RealmModels.swift in Sources */,
 				7620306D25BD4ACF00838524 /* AppDelegate.swift in Sources */,
 				7620306F25BD4AD000838524 /* SceneDelegate.swift in Sources */,
