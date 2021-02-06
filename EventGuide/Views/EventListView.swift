@@ -15,7 +15,7 @@ struct EventListView: View {
     var body: some View {
         NavigationView{
             List(events, id: \.id){ event in
-                NavigationLink(destination: EventDetailsView()){
+                NavigationLink(destination: EventDetailsView(event: event)){
                     HStack{
                     
                     KFImage.url(URL(string: event.performers.first?.image ?? "")!)
