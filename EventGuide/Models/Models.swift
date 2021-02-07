@@ -27,6 +27,23 @@ struct Event: Codable{
     let url: String
     let dateTbd: Bool
     let title: String
+    
+    // Compute date and time based on dateTbd and timeTbd
+    var dateTime: String{
+        // Check if event date is fixed
+        if !dateTbd{
+            // Date is decided, Check if time is fixed
+            if !timeTbd{
+                let eventDate = DateFormatter.dayMonthYearTimeFormat.string(from: datetimeLocal)
+                return "\(eventDate)"
+            }else{
+                let eventDate = DateFormatter.dayMonthYearFormat.string(from: datetimeLocal)
+                return "\(eventDate) Time TBD"
+            }
+        }else{
+            return "Date and Time TBD"
+        }
+    }
 }
 
 struct Meta: Codable{
