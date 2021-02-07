@@ -10,92 +10,111 @@ import Kingfisher
 
 struct EventDetailsView: View {
 
+    @Environment(\.presentationMode) var presentationMode
     let event: Event
 
     var body: some View {
-        ScrollView{
-            
-            GeometryReader{ geometry in
-                // Event Image
-                KFImage(URL(string: event.performers.first?.image ?? "")!)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: geometry.size.width, height: getHeightForHeaderImage(geometry))
-                    .clipped()
-                    .offset(x: 0, y: getOffsetForHeaderImage(geometry))
-            }.frame(height: 300)
-            
-            VStack(spacing: 20){
+        
+        ZStack(alignment: .topLeading){
+            ScrollView{
                 
-                // Event title and date
-                HStack{
-                    VStack(alignment: .leading, spacing: 0){
-                        Text(event.title)
-                            .font(.system(size: 20))
-                            .fontWeight(.semibold)
+                GeometryReader{ geometry in
+                    // Event Image
+                    KFImage(URL(string: event.performers.first?.image ?? "")!)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: geometry.size.width, height: getHeightForHeaderImage(geometry))
+                        .clipped()
+                        .offset(x: 0, y: getOffsetForHeaderImage(geometry))
+                }.frame(height: 300)
+                
+                VStack(spacing: 20){
+                    
+                    // Event title and date
+                    HStack{
+                        VStack(alignment: .leading, spacing: 0){
+                            Text(event.title)
+                                .font(.system(size: 20))
+                                .fontWeight(.semibold)
+                            
+                            Text(event.dateTime)
+                                .font(.callout)
+                                .foregroundColor(.secondary)
+                        }
                         
-                        Text(event.dateTime)
-                            .font(.callout)
-                            .foregroundColor(.secondary)
+                        Spacer()
                     }
                     
-                    Spacer()
-                }
-                
-                // Buttons
-                HStack{
-                    Button(action: {
-                        favoriteTapped()
-                    }, label: {
-                        Image(systemName: "heart")
-                        Text("Favorite")
-                    })
-                    .foregroundColor(.white)
-                    .frame(width: 130, height: 35)
-                    .background(Color(UIColor.systemGreen))
-                    .clipShape(RoundedRectangle(cornerRadius: 7))
-                    
-                    Link(destination: URL(string: event.url)!, label: {
-                        Image(systemName: "ticket")
-                        Text("Find Tickets")
-                    })
-                    .foregroundColor(.white)
-                    .frame(width: 150, height: 35)
-                    .background(Color(UIColor.systemIndigo))
-                    .clipShape(RoundedRectangle(cornerRadius: 7))
-                    
-                    Spacer()
-                }
-                
-                // Event venue and addres details
-                HStack{
-                    VStack(alignment: .leading, spacing: 0){
-                        Text(event.venue.nameV2)
-                            .font(.callout)
+                    // Buttons
+                    HStack{
+                        Button(action: {
+                            favoriteTapped()
+                        }, label: {
+                            Image(systemName: "heart")
+                            Text("Favorite")
+                        })
+                        .foregroundColor(.white)
+                        .frame(width: 130, height: 35)
+                        .background(Color(UIColor.systemGreen))
+                        .clipShape(RoundedRectangle(cornerRadius: 7))
                         
-                        Text(event.venue.fullAddress)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
+                        Link(destination: URL(string: event.url)!, label: {
+                            Image(systemName: "ticket")
+                            Text("Find Tickets")
+                        })
+                        .foregroundColor(.white)
+                        .frame(width: 150, height: 35)
+                        .background(Color(UIColor.systemIndigo))
+                        .clipShape(RoundedRectangle(cornerRadius: 7))
+                        
+                        Spacer()
                     }
                     
-                    Spacer()
-                }
-                
-                // Map Link
-                HStack{
-                    Button(action: {
-                        openMapsWithLocation(with: event.venue.nameV2)
-                    }, label: {
-                        Text("Get Directions")
-                    })
+                    Divider()
                     
-                    Spacer()
+                    // Event venue and Map Link
+                    HStack{
+                        VStack(alignment: .leading, spacing: 0){
+                            Text(event.venue.nameV2)
+                                .font(.callout)
+                            
+                            Text(event.venue.fullAddress)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                            
+                            Spacer().frame(height: 10)
+                            
+                            Button(action: {
+                                openMapsWithLocation(with: event.venue.nameV2)
+                            }, label: {
+                                Text("Get Directions")
+                            })
+                        }
+                        
+                        Spacer()
+                    }
+                    
                 }
-                
+                .padding(.all, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             }
-            .padding(.all, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                    Image(systemName: "chevron.left")
+                        .resizable()
+                        .foregroundColor(.white)
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+            }
+            .padding(10)
+            .background(Color(UIColor.systemGray))
+            .clipShape(RoundedRectangle(cornerRadius: 7))
+            .offset(x: 10)
+
         }
-        .edgesIgnoringSafeArea(.all)
+        .navigationBarHidden(true)
+        .statusBar(hidden: true)
     }
     
     private func getScrollOffset(_ geometry: GeometryProxy) -> CGFloat{
