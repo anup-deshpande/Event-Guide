@@ -114,4 +114,7 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+# API Client-ID plist
+SeatGeek-Info.plist
+
 # End of https://www.toptal.com/developers/gitignore/api/swift,macos

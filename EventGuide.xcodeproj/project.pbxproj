@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		7620306D25BD4ACF00838524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620306C25BD4ACF00838524 /* AppDelegate.swift */; };
 		7620306F25BD4AD000838524 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620306E25BD4AD000838524 /* SceneDelegate.swift */; };
-		7620307125BD4AD000838524 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620307025BD4AD000838524 /* EventListViewController.swift */; };
-		7620307425BD4AD000838524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620307225BD4AD000838524 /* Main.storyboard */; };
 		7620307625BD4AD200838524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620307525BD4AD200838524 /* Assets.xcassets */; };
 		7620307925BD4AD200838524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620307725BD4AD200838524 /* LaunchScreen.storyboard */; };
 		7620308325BD4D3900838524 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7620308225BD4D3900838524 /* Realm */; };
@@ -24,16 +22,12 @@
 		766414E325BF5C7A005171D4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE325BE052300F5C04E /* Models.swift */; };
 		766414ED25BFE178005171D4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766414EC25BFE178005171D4 /* DateFormatter+Extension.swift */; };
 		768B7CE425BE052300F5C04E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE325BE052300F5C04E /* Models.swift */; };
-		768B7CE925BE05D500F5C04E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CE825BE05D500F5C04E /* Constants.swift */; };
-		768B7CED25BE061000F5C04E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CEC25BE061000F5C04E /* EventTableViewCell.swift */; };
-		768B7CF225BE067500F5C04E /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF125BE067500F5C04E /* EventDetailViewController.swift */; };
 		768B7CF725BE06F600F5C04E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF625BE06F600F5C04E /* Endpoint.swift */; };
 		768B7CFA25BE070200F5C04E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7CF925BE070200F5C04E /* NetworkService.swift */; };
 		768B7CFD25BE074E00F5C04E /* SeatGeek-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 768B7CFC25BE074E00F5C04E /* SeatGeek-Info.plist */; };
 		768B7D2225BF306200F5C04E /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B7D2125BF306200F5C04E /* NetworkServiceProtocol.swift */; };
 		7698B66F25CB7E6500758071 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698B66E25CB7E6500758071 /* EventListView.swift */; };
 		7698B6B825CBA4B600758071 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7698B6B725CBA4B600758071 /* Kingfisher */; };
-		7698B6BF25CBA53D00758071 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7698B6BE25CBA53D00758071 /* SDWebImage */; };
 		76E9C39F25CC9AA40037BC62 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9C39E25CC9AA40037BC62 /* EventDetailsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +45,6 @@
 		7620306925BD4ACF00838524 /* EventGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7620306C25BD4ACF00838524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7620306E25BD4AD000838524 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7620307025BD4AD000838524 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
-		7620307325BD4AD000838524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7620307525BD4AD200838524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7620307825BD4AD200838524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7620307A25BD4AD200838524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,9 +54,6 @@
 		766414DF25BF5C6D005171D4 /* RealmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
 		766414EC25BFE178005171D4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		768B7CE325BE052300F5C04E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		768B7CE825BE05D500F5C04E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		768B7CEC25BE061000F5C04E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
-		768B7CF125BE067500F5C04E /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		768B7CF625BE06F600F5C04E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		768B7CF925BE070200F5C04E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		768B7CFC25BE074E00F5C04E /* SeatGeek-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SeatGeek-Info.plist"; sourceTree = "<group>"; };
@@ -82,7 +71,6 @@
 			files = (
 				7698B6B825CBA4B600758071 /* Kingfisher in Frameworks */,
 				7620308525BD4D3900838524 /* RealmSwift in Frameworks */,
-				7698B6BF25CBA53D00758071 /* SDWebImage in Frameworks */,
 				7620308325BD4D3900838524 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,13 +108,10 @@
 			children = (
 				768B7CDD25BE045E00F5C04E /* Application Delegate */,
 				76E9C3A225CC9AAB0037BC62 /* Views */,
-				768B7CE025BE048400F5C04E /* View Controllers */,
-				768B7CEF25BE061500F5C04E /* TableView Cells */,
 				768B7CF525BE06E500F5C04E /* Networking */,
 				768B7CE225BE050E00F5C04E /* Models */,
 				766414EB25BFE153005171D4 /* Extensions */,
 				768B7CE725BE05BB00F5C04E /* Utils */,
-				7620307225BD4AD000838524 /* Main.storyboard */,
 				7620307525BD4AD200838524 /* Assets.xcassets */,
 				7620307725BD4AD200838524 /* LaunchScreen.storyboard */,
 				7620307A25BD4AD200838524 /* Info.plist */,
@@ -168,15 +153,6 @@
 			path = "Application Delegate";
 			sourceTree = "<group>";
 		};
-		768B7CE025BE048400F5C04E /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				7620307025BD4AD000838524 /* EventListViewController.swift */,
-				768B7CF125BE067500F5C04E /* EventDetailViewController.swift */,
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
 		768B7CE225BE050E00F5C04E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,17 +165,8 @@
 		768B7CE725BE05BB00F5C04E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				768B7CE825BE05D500F5C04E /* Constants.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		768B7CEF25BE061500F5C04E /* TableView Cells */ = {
-			isa = PBXGroup;
-			children = (
-				768B7CEC25BE061000F5C04E /* EventTableViewCell.swift */,
-			);
-			path = "TableView Cells";
 			sourceTree = "<group>";
 		};
 		768B7CF525BE06E500F5C04E /* Networking */ = {
@@ -252,7 +219,6 @@
 				7620308225BD4D3900838524 /* Realm */,
 				7620308425BD4D3900838524 /* RealmSwift */,
 				7698B6B725CBA4B600758071 /* Kingfisher */,
-				7698B6BE25CBA53D00758071 /* SDWebImage */,
 			);
 			productName = EventGuide;
 			productReference = 7620306925BD4ACF00838524 /* EventGuide.app */;
@@ -306,7 +272,6 @@
 			packageReferences = (
 				7620308125BD4D3900838524 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				7698B6B625CBA4B600758071 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				7698B6BD25CBA53D00758071 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 7620306A25BD4ACF00838524 /* Products */;
 			projectDirPath = "";
@@ -325,7 +290,6 @@
 			files = (
 				7620307925BD4AD200838524 /* LaunchScreen.storyboard in Resources */,
 				7620307625BD4AD200838524 /* Assets.xcassets in Resources */,
-				7620307425BD4AD000838524 /* Main.storyboard in Resources */,
 				768B7CFD25BE074E00F5C04E /* SeatGeek-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,15 +311,11 @@
 			files = (
 				768B7CF725BE06F600F5C04E /* Endpoint.swift in Sources */,
 				7698B66F25CB7E6500758071 /* EventListView.swift in Sources */,
-				768B7CED25BE061000F5C04E /* EventTableViewCell.swift in Sources */,
 				766414ED25BFE178005171D4 /* DateFormatter+Extension.swift in Sources */,
-				768B7CE925BE05D500F5C04E /* Constants.swift in Sources */,
-				7620307125BD4AD000838524 /* EventListViewController.swift in Sources */,
 				76E9C39F25CC9AA40037BC62 /* EventDetailsView.swift in Sources */,
 				766414E025BF5C6D005171D4 /* RealmModels.swift in Sources */,
 				7620306D25BD4ACF00838524 /* AppDelegate.swift in Sources */,
 				7620306F25BD4AD000838524 /* SceneDelegate.swift in Sources */,
-				768B7CF225BE067500F5C04E /* EventDetailViewController.swift in Sources */,
 				768B7CFA25BE070200F5C04E /* NetworkService.swift in Sources */,
 				768B7D2225BF306200F5C04E /* NetworkServiceProtocol.swift in Sources */,
 				768B7CE425BE052300F5C04E /* Models.swift in Sources */,
@@ -385,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7620307225BD4AD000838524 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7620307325BD4AD000838524 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7620307725BD4AD200838524 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -647,14 +599,6 @@
 				minimumVersion = 6.1.0;
 			};
 		};
-		7698B6BD25CBA53D00758071 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.4;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -672,11 +616,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7698B6B625CBA4B600758071 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		7698B6BE25CBA53D00758071 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7698B6BD25CBA53D00758071 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
