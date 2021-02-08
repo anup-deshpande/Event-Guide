@@ -14,4 +14,5 @@ Event-Guide lets you discover live events in the United States.
 
 ## Credits
 - [SeatGeek Platform API](http://platform.seatgeek.com) - Fetch directory of live events in United states
-- [SDWebImage](https://github.com/SDWebImage/SDWebImage.git) - Load images from URL
+- [Realm](https://github.com/realm/realm-cocoa) - Data persistance
+- [Kingfisher](https://github.com/onevcat/Kingfisher) - Load images from URL
